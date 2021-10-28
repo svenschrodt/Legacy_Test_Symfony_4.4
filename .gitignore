@@ -1,3 +1,17 @@
+# IDE specific stuff
+.idea
+.project
+.net
+
+# local-only testing / debugging resources
+.env
+.env.test
+.phpunit.result.cache
+migrations/
+phpunit.xml.dist
+
+
+
 # Cache and logs (Symfony2)
 /app/cache/*
 /app/logs/*

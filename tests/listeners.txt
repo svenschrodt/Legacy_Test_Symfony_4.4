@@ -1,0 +1,15 @@
+    <!-- @removed temp.  2021-10-25 by s.schrodt -->
+        <!--listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" -->
+
+        <!-- @added 2021-10-25 by s.schrodt
+             @see https://github.com/sebastianbergmann/phpunit/issues/4002
+        -->
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener">
+            <arguments>
+                <array>
+                    <!-- set this option to 0 to disable the DebugClassLoader integration -->
+                    <element key="debug-class-loader"><integer>0</integer></element>
+                </array>
+            </arguments>
+        </listener>
+    </listeners>
